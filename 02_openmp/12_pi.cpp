@@ -1,7 +1,7 @@
 #include <cstdio>
 
 int main() {
-  int n = 10;
+  int n = 1000;
   double dx = 1. / n;
   double pi = 0;
   #pragma omp parallel for reduction(+:pi)
