@@ -31,6 +31,7 @@ int main() {
   }
   //for (int i=1; i<range; i++) 
   //  offset[i] = offset[i-1] + bucket[i-1];
+
 #pragma omp for
   for (int i=0; i<range; i++) {
     int j = offset[i];
