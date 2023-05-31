@@ -226,7 +226,7 @@ int main() {
         apply_boundary_velocity<<<grid_x,thread_num>>>(param, u, v);
         cudaDeviceSynchronize();
 
-        output(n, param, u, v, p);
+        //output(n, param, u, v, p); //output files for visualization
     }
 
     cudaFree(x);
